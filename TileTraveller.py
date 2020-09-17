@@ -8,18 +8,30 @@
 x = 1
 y = 1
 
+<<<<<<< HEAD
 # föll fyrir áttir, ef það er Suður eða vestur lækkar input gildið um 1
 def sud_vest(a1):
     a1 -= 1
     return a1
 # ef það er Norður eða austur hækkar input gildið um 1
+=======
+# fall fyrir áttir
+def sud_vest(a1):
+    a1 -= 1
+    return a1
+
+>>>>>>> 1f52bb5f42673cc5ed8b8582fffdcd327730eb7b
 def nord_aust(a2):
     a2 += 1
     return a2
 
 # main program (hreyfing)
+<<<<<<< HEAD
 while x != 3 or y != 1: # Runnar þangað til komið er á endapunkt (3, 1)
     # If setningar sem segja hvert hægt er að hreyfa sig eftir staðsetningu
+=======
+while x != 3 or y != 1:
+>>>>>>> 1f52bb5f42673cc5ed8b8582fffdcd327730eb7b
     if x == 1 and y == 1:
         print("You can travel: (N)orth.")
     elif x == 1 and y == 2:
@@ -37,6 +49,7 @@ while x != 3 or y != 1: # Runnar þangað til komið er á endapunkt (3, 1)
     elif x == 3 and y == 3:
         print("You can travel: (S)outh or (W)est.")
 
+<<<<<<< HEAD
     att = input("Direction: ") # input gildið sem notandi velur
 
     # If setningar sem segja til um hvort notandi hafi slegið inn gilda átt
@@ -66,6 +79,34 @@ while x != 3 or y != 1: # Runnar þangað til komið er á endapunkt (3, 1)
         print("Not a valid direction!")
 
     # Ef áttin er gild er kallað á tilheyrandi fall
+=======
+    att = input("Direction: ")
+
+    if x == 1 and y == 1:
+        if att in 'eswESW':
+            print("Not a valid direction!")
+    elif x == 1 and y == 2:
+        if att in 'nesNES':
+            print("Not a valid direction!")
+    elif x == 1 and y == 3:
+        if att in 'esES':
+            print("Not a valid direction!")
+    elif x == 2 and y == 1:
+        if att in 'eswESW':
+            print("Not a valid direction!")
+    elif x == 2 and y == 2:
+        if att in 'neNE':
+            print("Not a valid direction!")
+    elif x == 2 and y == 3:
+        if att in 'nsNS':
+            print("Not a valid direction!")
+    elif x == 3 and y == 2:
+        if att in 'ewEW':
+            print("Not a valid direction!")
+    elif x == 3 and y == 3:
+        if att in 'neNE':
+            print("Not a valid direction!")
+>>>>>>> 1f52bb5f42673cc5ed8b8582fffdcd327730eb7b
     else:
         if att == 'w' or att == 'W':
             x = sud_vest(x)
@@ -75,11 +116,19 @@ while x != 3 or y != 1: # Runnar þangað til komið er á endapunkt (3, 1)
             y = nord_aust(y)
         elif att == 'e' or att == 'E':
             x = nord_aust(x)
+<<<<<<< HEAD
 # Virkjast einungis ef while lykkjan hættir, þ.e. þegar komið er á reit (3, 1)
 print("Victory!")
 
 
 
+=======
+    print(x)
+    print(y)
+print("Victory!")
+
+
+>>>>>>> 1f52bb5f42673cc5ed8b8582fffdcd327730eb7b
 # fall fyrir hvaða áttir má fara
 # 1,1 'n'
 # 1,2 'nes'
